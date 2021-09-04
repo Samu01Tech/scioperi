@@ -10,7 +10,7 @@
       "https://api.factmaven.com/xml-to-json/?xml=http://scioperi.mit.gov.it/mit2/public/scioperi/rss"
     );
     let list = await response.json();
-    return list.rss.channel.item.reverse();
+    return list.rss.channel.item;
   }
   const promise = getUsers();
 </script>
@@ -22,7 +22,7 @@
 </section>
 <section class="section">
   <div class="container">
-    <div class="tags are-large">
+    <!-- <div class="tags are-large">
       <span class="tag is-rounded is-primary">Tutti</span>
       <span class="tag is-rounded">Generale</span>
       <span class="tag is-rounded">Ferroviario</span>
@@ -31,9 +31,11 @@
       <span class="tag is-rounded">Marittimo</span>
       <span class="tag is-rounded">Elicotteri</span>
       <span class="tag is-rounded">Altro</span>
-    </div>
+    </div> -->
     {#await promise}
-      <progress class="progress is-primary" max="100">15%</progress>
+    <div class="grid">
+      <div class="button is-loading is-large is-primary is-rounded">    </div>
+    </div>
     {:then list}
       {#each list as item}
         <div class="box">
@@ -124,4 +126,8 @@
 
 <style lang="scss">
   @import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
+  .grid{
+    display: grid;
+    place-items: center;
+  }
 </style>
