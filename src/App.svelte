@@ -34,16 +34,16 @@
 <meta property="og:url" content="https://scioperi-italia.netlify.app/">
 <meta property="og:title" content="Scioperi Italia">
 <meta property="og:description" content="Rimani aggiornato sugli scioperi in programma nella penisola.">
-<meta property="og:image" content="./assets/logo.png">
+<meta property="og:image" content="./public/logo.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://scioperi-italia.netlify.app/">
 <meta property="twitter:title" content="Scioperi Italia">
 <meta property="twitter:description" content="Rimani aggiornato sugli scioperi in programma nella penisola.">
-<meta property="twitter:image" content="./assets/logo.png">
+<meta property="twitter:image" content="./public/logo.png">
 
-<link rel='icon' type='image/png' href='./assets/logo.png'>
+<link rel='icon' type='image/png' href='./public/logo.png'>
 
 </svelte:head>
 
