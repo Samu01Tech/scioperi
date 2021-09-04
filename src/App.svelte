@@ -15,6 +15,38 @@
   const promise = getUsers();
 </script>
 
+<svelte:head>
+  <!-- Primary Meta Tags -->
+  <title>Scioperi Italia</title>
+  <meta name="title" content="Scioperi Italia">
+  <meta name="description" content="Rimani aggiornato sugli scioperi in programma nella penisola.">
+<meta name="keywords" content="sciopero, scioperi, treni, ritardo, italia, ministero dei trasporti">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="@Samu01Tech">
+<meta name="language" content="IT">
+<meta name="author" content="Samuele">
+<meta name="creationdate" content="04/09/2021">
+<meta name="distribution" content="local">
+<meta name="rating" content="general">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://scioperi-italia.netlify.app/">
+<meta property="og:title" content="Scioperi Italia">
+<meta property="og:description" content="Rimani aggiornato sugli scioperi in programma nella penisola.">
+<meta property="og:image" content="./assets/logo.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://scioperi-italia.netlify.app/">
+<meta property="twitter:title" content="Scioperi Italia">
+<meta property="twitter:description" content="Rimani aggiornato sugli scioperi in programma nella penisola.">
+<meta property="twitter:image" content="./assets/logo.png">
+
+<link rel='icon' type='image/png' href='./assets/logo.png'>
+
+</svelte:head>
+
 <section class="hero is-primary">
   <div class="hero-body">
     <p class="title">Scioperi</p>
